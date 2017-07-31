@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
 
 export default class PostList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      title: '',
+      blog: '',
+      posts: []
+    }
   };
 
   componentDidMount() {
-    fetch('https://tiny-lasagna-server.herokuapp.com/collections/blogger/').then((result) => {
+    fetch('https://tiny-lasagna-server.herokuapp.com/collections/bloggerDoyle').then((result) => {
       result.json().then((response) => {
-        console.log(response);
+        this.setState({posts: response});
       });
     });
   };
 
   render() {
+    let blogs = this.state.posts.map((blog, index) => {
+      return (
+        <h1 key={index}>{blog.name}</h1>
+      )
+    });
     return(
       <div>
-        <h1>Show all posts</h1>
+        {blogs}
       </div>
     );
   };
