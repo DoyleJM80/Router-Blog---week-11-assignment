@@ -31,11 +31,14 @@ export default class CreatePost extends Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form className="flex column container" onSubmit={this.handleSubmit}>
+          <label>Name</label>
           <input type="text" name="name"></input>
+          <label>Title</label>
           <input type="text" name="title"></input>
-          <textarea name="blog"></textarea>
-          <input type="submit"></input>
+          <label>Blog Post</label>
+          <textarea className="blog-area" name="blog"></textarea>
+          <input className="button submit" type="submit"></input>
         </form>
       </div>
     );

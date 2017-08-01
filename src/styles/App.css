@@ -1,0 +1,50 @@
+.banner {
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  color: #fff;
+  padding-left: 15px;
+}
+
+body {
+  margin-top: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  color: rgb(150, 150, 150);
+  background-color: #000;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.button-style {
+  border: none;
+  background-color: #000;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.blog-area {
+  height: 200px;
+}
+
+.submit {
+  width: 80px;
+  color: #fff;
+}
