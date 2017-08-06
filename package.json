@@ -17,5 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://thedoyles922.github.io/router-blog"
+  "homepage": "https://thedoyles922.github.io/Router-Blog---week-11-assignment/"
 }
